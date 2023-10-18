@@ -2,11 +2,11 @@
 
 ## Description
 
-generates readmes
+generates readme file for user
 
-- motivation?
-- Why did you build this project?
-- What problem does it solve?
+- Motivation?
+- Why build this project?
+- What problem does this solve?
 - What did you learn?
 
 ## Table of Contents
@@ -19,23 +19,24 @@ generates readmes
 
 ## Installation
 
-node npm inquirer
+node, npm, and inquirer 8.2.4
 
 
 ## Usage
 
-install node and npm, run in cli
+install node and npm, run command in cli
 
 Screenshot
 
 ## Credits
 
 na
-List your collaborators, if any, with links to their GitHub profiles.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+-List collaborators, GitHub links if applicable.
 
-If you followed tutorials, include links to those here as well.
+-List third-party assets and links.
+
+-List tutorials and links.
 
 ## License
 
