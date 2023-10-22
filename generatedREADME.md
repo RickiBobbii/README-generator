@@ -1,13 +1,8 @@
-# readme generator
+# Readme Generator
 
 ## Description
 
-generates readme file for user
-
-- Motivation?
-- Why build this project?
-- What problem does this solve?
-- What did you learn?
+This app generates a readme.md for professional or personal use.
 
 ## Table of Contents
 
@@ -19,42 +14,29 @@ generates readme file for user
 
 ## Installation
 
-node, npm, and inquirer 8.2.4
+Node, Inquire, and fs.
 
 
 ## Usage
 
-install node and npm, run command in cli
+From the CLI run node index.js from the repos directory. Then answere the questions and your readme will be generated with a file name of generatedREADME.md.
 
 Screenshot
 
 ## Credits
 
-na
-
--List collaborators, GitHub links if applicable.
-
--List third-party assets and links.
-
--List tutorials and links.
+N?A
 
 ## License
 
-
-## Badges
-
-
-## Features
-
-
-## How to Contribute
-
-
+MIT License
 
 ## Tests
 
-na
+N/A
 
 ## Questions
 
-Email link for questions me@me
+Github Profile for [rickibobbiii](https://github.com/rickibobbiii)
+
+Contact for questions: me@gmail.com
