@@ -9,14 +9,9 @@ inquirer
       name: 'title',
     },
     {
-        type: 'input',
-        message: 'What the Description of your project? ',
-        name: 'description',
-      },
-    {
       type: 'input',           //checkbox?
-      message: 'Check if you want Table of Contents? ',
-      name: 'contents',
+      message: 'What is the Description of your project (list ideas like motivation, why build it, what problem does it solve, and what you learned)? ',
+      name: 'description',
     },
     {
       type: 'input',
@@ -29,14 +24,15 @@ inquirer
         name: 'usage',
     },
     {
-        type: 'input',          //checkbox?
+        type: 'list',          //checkbox?
         message: 'What License will you be using? ',
         name: 'license',
+        choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0'],
     },
     {
         type: 'input',
         message: 'Whom, if any, Contributed to your project? ',
-        name: 'contribute',
+        name: 'credit',
     },
     {
         type: 'input',
@@ -44,9 +40,14 @@ inquirer
         name: 'tests',
     },
     {
+      type: 'input',
+      message: 'What is your Github username for profile reference? ',
+      name: 'github',
+    },
+    {
         type: 'input',
         message: 'Provide contact email for Questions: ',
-        name: 'questions',
+        name: 'email',
     },
   ])
     .then((answers) => {
@@ -56,11 +57,6 @@ inquirer
 ## Description
 
 ${answers.description}
-
-- Motivation?
-- Why build this project?
-- What problem does this solve?
-- What did you learn?
 
 ## Table of Contents
 
@@ -79,30 +75,13 @@ ${answers.installation}
 
 ${answers.usage}
 
-Screenshot
-
 ## Credits
 
-${answers.contribute}
-
--List collaborators, GitHub links if applicable.
-
--List third-party assets and links.
-
--List tutorials and links.
+${answers.credit}
 
 ## License
 
-
-## Badges
-
-
-## Features
-
-
-## How to Contribute
-
-
+${answers.license}
 
 ## Tests
 
@@ -110,12 +89,14 @@ ${answers.tests}
 
 ## Questions
 
-Email link for questions ${answers.questions}
+Github Profile for [${answers.github}](https://github.com/${answers.github})
+
+Contact for questions: ${answers.email}
 `;
 
 fs.writeFile('./generatedREADME.md', readMe, (err) => {
     if (err)
     console.log(err);
-    console.log('File has been saved!');
+    console.log('Your README has been generated!');
   });
 });
