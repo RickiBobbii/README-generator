@@ -70,19 +70,22 @@ inquirer
 
 ${lib.renderLicenseBadge(answers.license)}   
 
-${answers.license}
+***${answers.license}***
+
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation) 
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Description
 
 ${answers.description}
 
-## Table of Contents
-
-
-- [Installation](#installation) 
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
