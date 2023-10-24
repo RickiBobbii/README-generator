@@ -1,8 +1,12 @@
-# Readme Generator
+# Readme generator
+
+## License
+
+MIT License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT);
 
 ## Description
 
-This app generates a readme.md for professional or personal use.
+App generates a readme.md for professional or personal use.
 
 ## Table of Contents
 
@@ -14,22 +18,18 @@ This app generates a readme.md for professional or personal use.
 
 ## Installation
 
-Node, Inquire, and fs.
+Node, Inquirer, and fs
 
 
 ## Usage
 
-From the CLI run node index.js from the repos directory. Then answere the questions and your readme will be generated with a file name of generatedREADME.md.
-
-Screenshot
+From the CLI run node index.js, answer the prompts and your new readme.md will be generated for you.  It will be labeled as generatedREADME.md.
 
 ## Credits
 
 N?A
 
-## License
 
-MIT License
 
 ## Tests
 
