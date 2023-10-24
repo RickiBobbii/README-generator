@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const lib = require('./lib');
 
 inquirer
   .prompt([
@@ -27,7 +28,7 @@ inquirer
         type: 'list',          //checkbox?
         message: 'What License will you be using? ',
         name: 'license',
-        choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0'],
+        choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'None'],
     },
     {
         type: 'input',
@@ -54,6 +55,10 @@ inquirer
         const readMe = 
 `# ${answers.title}
 
+## License
+
+${answers.license} ${lib.renderLicenseBadge(answers.license)};
+
 ## Description
 
 ${answers.description}
@@ -79,9 +84,7 @@ ${answers.usage}
 
 ${answers.credit}
 
-## License
 
-${answers.license}
 
 ## Tests
 
@@ -100,3 +103,4 @@ fs.writeFile('./generatedREADME.md', readMe, (err) => {
     console.log('Your README has been generated!');
   });
 });
+
