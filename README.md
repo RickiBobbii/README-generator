@@ -35,4 +35,4 @@ Validate function made with help from Bing AI.
 
 ## Questions
 
-Github Profile for [rickibobbiii](https://github.com/rickibobbiii)
+Github Profile for [rickibobbii](https://github.com/rickibobbii)
